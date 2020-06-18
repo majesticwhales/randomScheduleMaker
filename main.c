@@ -9,7 +9,7 @@ int main(void) {
     printf("How many teams/participants do you want to include?");
 
     if (scanf("%d", teams) != 1 || teams < 2) {
-        printf("You must have at least two teams or participants.")
+        printf("You must have at least two teams or participants.");
     }
 
     return 0;

@@ -7,11 +7,9 @@ int main(void) {
     int *teams;
     int *games;
 
-    basicSetup(divs, teams, games);
+    int error = basicSetup(divs, teams, games);
 
-    printf("Error: You must have at least two teams or participants.\n");
-    printf("Error: You must have at least on egame in the regular season for each team.\n");
-    printf("Error: You must have at least one division.\n");
+    error_analysis(error);
     
-    return 0;
+    return error;
 }

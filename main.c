@@ -9,7 +9,9 @@ int main(void) {
 
     int error = basicSetup(divs, teams, games);
 
-    error_analysis(error);
-    
-    return error;
+    if (error_analysis(error)) {
+        return error;
+    }
+
+    return 0;
 }

@@ -20,18 +20,18 @@ int basicSetup(int *teams, int *games, int *divs) {
   return return_code;
 }
 
-void error_analysis(int error) {
+int error_analysis(int error) {
   switch(error) {
     case 1:
       printf("Error: You must have at least two teams or participants.\n");
-      break;
+      return 1;
     case 2:
       printf("Error: You must have at least on egame in the regular season for each team.\n");
-      break;
+      return 2;
     case 3:
       printf("Error: You must have at least one division.\n");
-      break;
+      return 3;
     default:
-      break;
+      return 0;
   }
 }

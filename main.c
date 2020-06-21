@@ -13,7 +13,5 @@ int main(void) {
         return error;
     }
 
-    
-
     return 0;
 }

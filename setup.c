@@ -12,7 +12,7 @@ int basicSetup(int *teams, int *games, int *divs) {
     return_code = 2;
   }
 
-  printf("How many divisions would you like to have in one league?\n");
+  printf("How many divisions would you like to have in the league?\n");
   if (scanf("%d", &divs) != 1 || *divs < 1) {    
     return_code = 3;
   }
@@ -26,7 +26,7 @@ int error_analysis(int error) {
       printf("Error: You must have at least two teams or participants.\n");
       return 1;
     case 2:
-      printf("Error: You must have at least on egame in the regular season for each team.\n");
+      printf("Error: You must have at least one game in the regular season for each team.\n");
       return 2;
     case 3:
       printf("Error: You must have at least one division.\n");

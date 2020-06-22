@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "setup.h"
+#include "setup.c"
 
 int main(void) {
 

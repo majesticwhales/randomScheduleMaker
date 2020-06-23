@@ -1,21 +1,36 @@
 #include <stdio.h>
 
-int basicSetup(int *teams, int *games, int *divs) {
+void intro(void) {
+  printf("Welcome to the Schedule-Building Tool!\n\n");
+}
+
+void introPrompts(void) {
+  printf("If you would like to add or delete a team to the directory, type 't'\n");
+  printf("If you would like to create or delete a division, type 'd'\n");
+  printf("If you would like to alter the schedule settings, type 's'\n");
+  printf("If you are done and would like to randomize, type 'done'\n");
+  printf("If you would like to quit the program and erase your content, type 'q'\n");
+}
+
+int basicSetup() {
 
   int return_code = 0;
+  int teams = 0;
+  int games = 0;
+  int divs = 0;
 
   printf("How many teams would you like to have in your league?\n");
-  if (scanf("%d", teams) != 1 || *teams < 2) { 
+  if (scanf("%d", &teams) != 1 || teams < 2) { 
     return_code = 1;
   }
 
   printf("How many games would you like to have in the season?\n");
-  if (scanf("%d", games) != 1 || *games < 1) {
+  if (scanf("%d", &games) != 1 || games < 1) {
     return_code = 2;
   }
 
   printf("How many divisions would you like to have in the league?\n");
-  if (scanf("%d", divs) != 1 || *divs < 1) {    
+  if (scanf("%d", &divs) != 1 || divs < 1) {    
     return_code = 3;
   }
 

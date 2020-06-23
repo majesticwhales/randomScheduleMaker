@@ -4,6 +4,12 @@
 int main(void) {
 
     intro();
-    intro_prompts();
+
+    char cmd = 0;
+
+    do {
+        intro_prompts();
+        scan_answer();
+    } while (cmd != 'q');
 
 }

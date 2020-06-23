@@ -5,11 +5,13 @@ int main(void) {
 
     intro();
 
-    char cmd = 0;
+    char *cmd = 0;
 
     do {
         intro_prompts();
-        scan_answer();
-    } while (cmd != 'q');
+        scan_answer(cmd);
+    } while (*cmd != 'q');
+
+    delete_memory();
 
 }

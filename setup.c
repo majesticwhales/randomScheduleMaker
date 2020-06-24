@@ -4,7 +4,7 @@ void intro(void) {
   printf("Welcome to the Schedule-Building Tool!\n\n");
 }
 
-void introPrompts(void) {
+void intro_prompts(void) {
   printf("If you would like to add or delete a team to the directory, type 't'\n");
   printf("If you would like to create or delete a division, type 'd'\n");
   printf("If you would like to alter the schedule settings, type 's'\n");

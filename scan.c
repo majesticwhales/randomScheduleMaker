@@ -15,7 +15,7 @@ void scan_answer(char *c) {
       schedule_functions();
       break;
     case 'f':
-      make_scehdule();
+      make_schedule();
       break;
     case 'q':
       break;

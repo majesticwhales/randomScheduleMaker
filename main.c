@@ -13,6 +13,4 @@ int main(void) {
         scan_answer(cmd);
     } while (*cmd != 'q');
 
-    delete_memory();
-
 }

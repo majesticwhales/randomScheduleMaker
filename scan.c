@@ -20,5 +20,6 @@ void scan_answer(char *c) {
     case 'q':
       break;
     default:
+      break;
   }
 }

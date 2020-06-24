@@ -1,4 +1,5 @@
 #include "setup.c"
+#include "scan.c"
 #include <stdlib.h>
 
 int main(void) {

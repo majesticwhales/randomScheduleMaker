@@ -1,22 +1,24 @@
-#include <stdio.h>
+#include "team.c"
+#include "div.c"
+#include "sched.c"
+#include "make.c"
 
 void scan_answer(char *c) {
   switch(*c) {
     case 't':
-      //team
+      team_functions();
       break;
     case 'd':
-      //division
+      division_functions();
       break;
     case 's':
-      //schedule
+      schedule_functions();
       break;
     case 'f':
-      //makesched
+      make_scehdule();
       break;
     case 'q':
       break;
     default:
-      //re-do
   }
 }
